@@ -1,0 +1,4 @@
+app/code/community/Poposki/Blog                             app/code/community/Poposki/Blog
+app/etc/modules/Poposki_Blog.xml                            app/etc/modules/Poposki_Blog.xml
+app/design/frontend/base/default/layout/poposki/blog.xml    app/design/frontend/base/default/layout/poposki/blog.xml
+app/design/frontend/base/default/template/poposki           app/design/frontend/base/default/template/poposki

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <poposki_blog_index_index>
+        <update handle="set_root_template"/>
+        <reference name="content">
+            <block type="poposki_blog/post_collection" name="blog.post.collection" template="poposki/blog/post/collection.phtml"/>
+        </reference>
+    </poposki_blog_index_index>
+
+    <poposki_blog_view_index>
+        <update handle="set_root_template"/>
+        <reference name="content">
+            <block type="poposki_blog/post_view" name="blog.post.view" template="poposki/blog/post/view.phtml"/>
+        </reference>
+    </poposki_blog_view_index>
+
+    <set_root_template>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </set_root_template>
+</layout>

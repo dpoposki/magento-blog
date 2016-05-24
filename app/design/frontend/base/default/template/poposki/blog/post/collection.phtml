@@ -1,0 +1,12 @@
+<h1>All posts</h1>
+<?php if (!empty($this->getPosts())): ?>
+    <?php foreach ($this->getPosts() as $post): ?>
+        <article>
+            <h2><?php echo $post->getTitle() ?></h2>
+            <div><?php echo $post->getContent() ?></div>
+            <a href="<?php echo Mage::getUrl('blog/view/index', ['id' => $post->getId()->getId()]) ?>">Read post</a>
+        </article>
+    <?php endforeach; ?>
+<?php else: ?>
+    There are no posts at the moment
+<?php endif; ?>
